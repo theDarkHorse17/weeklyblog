@@ -79,18 +79,9 @@ export default function Intro(){
             </ul>
         );
     }
-    else{
-        ulContent = (
-            <ul id="ul">
-                
-                <li><a href='/create' id='create'>Create Post</a></li>
-                <li><a href='/logout' id='logout' onClick={logout} >Logout</a></li>
-            </ul>
-        );
-    }
     return(
         <header id="header">
-            <a href='/' className="logo">Weekly Blog</a>   
+            <a href='/' className="logo" id='logs'>Weekly Blog</a>   
             {ulContent}
         <div id="drop" onClick={handleDropdownClick}><FontAwesomeIcon icon={faAnglesDown} id="drp"style={iconStyle}/></div>
     </header>
