@@ -3,29 +3,10 @@ import Intro2 from "../intro2";
 import 'react-quill/dist/quill.snow.css'
 import  { useState} from 'react';
 import { Navigate } from "react-router-dom";
+import Editor from "../editor";
 
 
-const modules={
-    toolbar: [
-        ['bold', 'italic', 'underline', 'strike'],        
-        ['blockquote', 'code-block'],               
-        [{ 'list': 'ordered'}, { 'list': 'bullet' }],
-        [{ 'script': 'sub'}, { 'script': 'super' }],      
-        [{ 'indent': '-1'}, { 'indent': '+1' }],          
-        [{ 'direction': 'rtl' }],                         
-      
-        [{ 'size': ['small', false, 'large', 'huge'] }],  
-        [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
-      
-        [{ 'color': [] }, { 'background': [] }],          
-        [{ 'font': [] }],
-        [{ 'align': [] }],
 
-        ['link','image'],
-      
-        ['clean']                                         
-      ]
-};
 
 export default function CreatePost(){
     const[title,setTitle]=useState(' ')
@@ -74,13 +55,8 @@ export default function CreatePost(){
             onChange={ev=>setsummary(ev.target.value)}
             />
             
-            <div className="editor-container">
-                <ReactQuill  
-                value={content}
-                onChange={newValue =>setcontent(newValue)}
-                modules={modules}/>
-
-            </div>
+            
+                <Editor value={content} onChange={setcontent}/>
         </form>
         </> 
     )
