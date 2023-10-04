@@ -1,4 +1,4 @@
-import ReactQuill from "react-quill";
+
 import Intro2 from "../intro2";
 import 'react-quill/dist/quill.snow.css'
 import  { useState} from 'react';
@@ -51,7 +51,7 @@ export default function CreatePost(){
 
 
             <input type="summary" id='blk1' placeholder={"summary"}
-              // value={summary} 
+              //value={summary} 
             onChange={ev=>setsummary(ev.target.value)}
             />
             

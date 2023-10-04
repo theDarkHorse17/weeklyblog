@@ -1,4 +1,3 @@
-import ReactQuill from "react-quill";
 import Intro2 from "../intro2";
 import 'react-quill/dist/quill.snow.css'
 import  { useEffect, useState} from 'react';
