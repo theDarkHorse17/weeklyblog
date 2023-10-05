@@ -27,7 +27,10 @@ export default function Login() {
         } catch (error) {
             // Handle any unexpected errors here
             console.error(error);
-            setError('An error occurred during login.');
+            setError(<div id="err">
+                <p>An error occurred during login.</p>
+                <p>Are you sure you are registered?</p>
+            </div>);
         }
     }
 

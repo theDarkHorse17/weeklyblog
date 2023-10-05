@@ -50,6 +50,15 @@
     margin-bottom: 20px;
     border-radius: 10px;
 }  
+#err{
+    margin-top: 20px;
+    background-color: #ff0000; /* Background color for the error message */
+  color: #ffffff; /* Text color for the error message */
+  padding: 10px; /* Padding around the error message */
+  border-radius: 5px; /* Rounded corners for the error message */
+  font-size: 16px; /* Font size for the error message */
+  text-align: center;
+}
 .editor-container {
   width: 98%;
   height: 300px;
