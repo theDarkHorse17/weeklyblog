@@ -10,6 +10,16 @@
     user-select: none;
     
 }
+#pfp{
+    width: 50px; /* Adjust the width and height as needed */
+    height: 50px; /* Make sure both width and height are the same */
+     /* Set your desired background color */
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 10px;
+    color: #ffffff;
+}
 #cp {
     background-color: #1c0522;
     height: 100vh;
@@ -21,7 +31,7 @@
 }
 
 #csf{
-    width: 98%;
+    width: 40%;
     padding-top: 10px;
     padding: 10px;
     margin-bottom: 20px;
@@ -31,7 +41,7 @@
     cursor: pointer;
 }
 #pst{
-    width: 98%;
+    width: 40%;
     padding-top: 10px;
     padding: 10px;
     margin-bottom: 20px;
@@ -45,10 +55,11 @@
   }
 
 #blk1{
-    width: 98%;
+    width: 50%;
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 10px;
+    
 }  
 #err{
     margin-top: 20px;

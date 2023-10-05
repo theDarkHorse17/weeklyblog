@@ -22,7 +22,6 @@ export default function Matha(){
         setuser(userInfo);
       });
   }, []);
-
   async function logout(ev) {
     ev.preventDefault();
     
@@ -125,6 +124,9 @@ export default function Matha(){
                 <>
                 <li><a href='/create' id='create'>Create Post</a></li>
                 <li><a href='/logout' id='logout' onClick={logout} >Logout</a></li>
+                <div id='pfp'>
+                <p>id:{user.email}</p>
+                </div>
                 </>    
             )}
             {!user &&(

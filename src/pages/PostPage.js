@@ -58,7 +58,7 @@ export default function PostPage() {
         );
     } else {
         // Redirect to another page when the user is not the author
-        history('/login'); // Replace '/another-page' with the desired URL
+        //history('/login'); // Replace '/another-page' with the desired URL
     }
 
     return (
